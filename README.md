@@ -8,5 +8,6 @@ Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https
 Mod | Language | Maintainer | Link | Comment |
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
 FiveM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-fivem) | - |
+RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-redm) | - |
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
 RAGEMP | TypeScript | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only |
