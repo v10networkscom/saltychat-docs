@@ -24,5 +24,5 @@
 [vs-workloads]: https://github.com/saltminede/saltychat-docs/raw/master/media/vs-workloads.jpg "Visual Studio Workloads"
 [vs-components]: https://github.com/saltminede/saltychat-docs/raw/master/media/vs-components.jpg "Visual Studio Components"
 [vs-building]: https://github.com/saltminede/saltychat-docs/raw/master/media/vs-building.jpg "Visual Studio Building"
-[vs-output-tab]: https://github.com/saltminede/saltychat-docs/raw/master/media/vs-output.jpg "Visual Studio Output Tab"
+[vs-output-tab]: https://github.com/saltminede/saltychat-docs/raw/master/media/vs-output-tab.jpg "Visual Studio Output Tab"
 [vs-output]: https://github.com/saltminede/saltychat-docs/raw/master/media/vs-output.jpg "Visual Studio Output"
