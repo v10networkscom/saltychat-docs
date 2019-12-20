@@ -54,6 +54,7 @@ IsDebugLoggingEnabled | Enables/disables simple debug logging - should only be s
 IsExtensiveLoggingEnabled | Enables/disables extensive debug logging - should only be turned on when needed
 PhoneOffset | 3D position for phone playback
 RadioOffset | 3D position for radio playback
+SecondaryRadioOffset | 3D position for secondary radio playback
 
 # Available resources
 Mod | Language | Maintainer | Link | Comment |

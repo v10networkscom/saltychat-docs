@@ -184,6 +184,7 @@ OwnRadioType | `RadioType` | The local players radio type
 PlayMicClick | `bool` | If `true` Salty Chat will automatically play the sound "onMicClick" or "offMicClick" of the specified sound pack, if the player is in range
 Volume | `float?` | Overrides the volume
 Direct | `bool` | `true` if the communication is direct, `false` to relay the communication through other players (`RelayedBy`)
+Secondary | `bool` | `true` if the communication is on the secondary channel
 RelayedBy | `string[]` | string array of TeamSpeak names from players that are relaying the communication (loudspeaker)
 
 Example:
