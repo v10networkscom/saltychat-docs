@@ -30,7 +30,8 @@ enum Command
     RadioCommunicationUpdate = 10,
     StopRadioCommunication = 11,
     PlaySound = 12,
-    StopSound = 13
+    StopSound = 13,
+    BulkUpdate = 14
 }
 ```
 

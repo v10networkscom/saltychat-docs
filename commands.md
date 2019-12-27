@@ -239,3 +239,19 @@ Example:
 ```json
 { "Command": 13, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Handle": "Ringtone" } }
 ```
+
+## 14 – BulkUpdate
+Updates all player states in one command
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+PlayerStates | `PlayerState[]` | Array of player states
+SelfState | `PlayerState` | Own player state
+
+Example:
+```json
+{ "Command": 14, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "PlayerStates": [{ "Name": "2913e966dd7b4d5a", "Position": { "X": -76.2008, "Y": 843.405151, "Z": 235.706909 }, "VoiceRange": 8.0, "IsAlive" : true,"VolumeOverride": null }], "SelfState": { "Position": { "X":1709.001, "Y":3596.44263, "Z":30.1104813 }, "Rotation": 154.050766 } } }
+```
