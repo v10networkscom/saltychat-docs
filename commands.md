@@ -20,6 +20,7 @@ Name | `string` | Name the client will be renamed to
 ChannelId | `uint64` | ID of the channel the client will be moved to
 ChannelPassword | `string` | Password of the channel
 SoundPack | `string` | The name of the sound pack that will be used for the instance
+SwissChannelIds | `uint64[]` | IDs of neutral channels that can be joined, while the game instance is running
 
 Example:
 ```json
