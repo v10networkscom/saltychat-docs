@@ -17,6 +17,7 @@ enum RadioType
 ```csharp
 enum Command
 {
+    Reset = -1,
     Initiate = 0,
     Ping = 1,
     Pong = 2,

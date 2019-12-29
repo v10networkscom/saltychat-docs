@@ -7,6 +7,17 @@ A basic command would look like this in JSON:
 { "Command": 2, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": null }
 ```
 
+## -1 – Reset
+Send by the plugin if a game instance was reset
+
+ServerUniqueIdentifier required: Yes  
+Parameter object: null
+
+Example:
+```json
+{ "Command": -1, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=" }
+```
+
 ## 0 – Initiate
 Start an instance of Salty Chat.
 
