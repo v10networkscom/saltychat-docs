@@ -56,6 +56,26 @@ PhoneOffset | 3D position for phone playback
 RadioOffset | 3D position for radio playback
 SecondaryRadioOffset | 3D position for secondary radio playback
 
+# Versioning and Update Branches
+With version 0.4.0 we introduce a new versioning schema for Salty Chat.  
+Versions within the same major version will be compatible with each other, even if there are changes like new features or fixes.
+
+```
+0.4.0
+| | |
+| | --- Patch (fixes and changes)
+| --- Minor (new features)
+--- Major (incompatible changes)
+```
+
+Any update will be tested in our multi-stage release process:
+
+Branch | Description
+------------ | -------------
+Stable | Any change is tested in the previous branches and was found to be stable.
+Testing | Public testing branch, where all changes can be tested. We recommend that this branch is only used by developers, who are familiar with the plugin and can debug any issues.
+PreBuild | Private testing branch, where **untested** changes are made. Versions using this branch are distributed by Salty Chat developers and are meant to test specific changes, before releasing them to the testing branch.
+
 # Available resources
 Mod | Language | Maintainer | Link | Comment |
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
