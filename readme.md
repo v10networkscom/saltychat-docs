@@ -83,3 +83,4 @@ FiveM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://githu
 RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-redm) | - |
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
 RAGEMP | TypeScript | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only |
+alt:V | C#/JS | [WhishN](https://github.com/WhishN) | [repo](https://github.com/WhishN/saltychat-altV) | - |
