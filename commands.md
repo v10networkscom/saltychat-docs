@@ -15,7 +15,7 @@ Parameter object: null
 
 Example:
 ```json
-{ "Command": -1, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=" }
+{ "Command": -1, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": null }
 ```
 
 ## 0 – Initiate
@@ -112,10 +112,12 @@ Rotation | `float` | The rotation of the player
 VoiceRange | `float` | Range the player can be heard (proximity voice)
 IsAlive | `bool` | If `false` the player can't be heard
 VolumeOverride | `float?` | Overrides the volume calculated by proximity voice (based on the distance)
+NoLoS | `bool` | `true` to enable a muffling sound effect
+DistanceCulled | `bool` | `true` to remove player from proximity calculation
 
 Example:
 ```json
-{ "Command": 5, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes", "Position": { "X": 12.5, "Y": -211.5, "Z": 24.9 }, "Rotation": 0.0, "VoiceRange": 22.0, "IsAlive": true, "VolumeOverride": null } }
+{ "Command": 5, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes", "Position": { "X": 12.5, "Y": -211.5, "Z": 24.9 }, "Rotation": 0.0, "VoiceRange": 22.0, "IsAlive": true, "VolumeOverride": null, "NoLoS": false, "DistanceCulled": false } }
 ```
 
 ## 6 – RemovePlayer
