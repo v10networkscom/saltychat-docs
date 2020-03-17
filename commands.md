@@ -92,6 +92,7 @@ Property | Type | Description
 ------------ | ------------- | -------------
 Position | `Vector3` | The players 3D position
 Rotation | `float` | The rotation of the player (-180 to 180)
+VoiceEffect | `VoiceEffect` | [Flags of effects](https://github.com/saltminede/saltychat-docs/blob/master/enums.md#voiceeffect) that should be applied to the voice
 
 Example:
 ```json
@@ -268,4 +269,20 @@ SelfState | `PlayerState` | Own player state
 Example:
 ```json
 { "Command": 14, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "PlayerStates": [{ "Name": "2913e966dd7b4d5a", "Position": { "X": -76.2008, "Y": 843.405151, "Z": 235.706909 }, "VoiceRange": 8.0, "IsAlive" : true,"VolumeOverride": null }], "SelfState": { "Position": { "X":1709.001, "Y":3596.44263, "Z":30.1104813 }, "Rotation": 154.050766 } } }
+```
+
+## 15 – TalkStateChange
+This will be sent by Salty Chat as soon as a player starts or stops talking.  
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+Name | `string` | Name of the player
+IsTalking | `bool` | `true` when player starts talking, `false` when he stops
+
+Example:
+```json
+{ "Command": 15, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "2913e966dd7b4d5a", "IsTalking": true } }
 ```

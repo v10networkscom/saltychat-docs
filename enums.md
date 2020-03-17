@@ -32,7 +32,8 @@ enum Command
     StopRadioCommunication = 11,
     PlaySound = 12,
     StopSound = 13,
-    BulkUpdate = 14
+    BulkUpdate = 14,
+    TalkStateChange = 15
 }
 ```
 
@@ -57,5 +58,14 @@ enum UpdateBranch
     Stable = 0,
     Testing = 1,
     PreBuild = 2
+}
+```
+
+## VoiceEffect
+```csharp
+[Flags]
+enum VoiceEffect
+{
+    Echo = 1
 }
 ```
