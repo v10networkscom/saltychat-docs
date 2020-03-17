@@ -16,6 +16,8 @@ Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https
 * 3D audio
 * Adjustable ranges (for e.g. whispering and screaming)
 * Distance-based flattening of the volume
+* Multiple audio streams for one player (in combination with phone and radio)
+* Voice effects (e.g. echo)
 
 ## Radio
 * Realistic voice distortion
@@ -26,19 +28,20 @@ Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https
    * Long Range (8km)
 * Communication from radio to radio, or distributed via radio towers
 * Loudspeaker (players can listen to the radio traffic)
-* Customizable 3D position for playback
+* [Customizable](/readme.md#configuration-file) audio mode for playback (left, right or stereo)
 
 ## Phone
 * Realistic voice distortion
 * Distortion based on signal strength
 * Loudspeaker (players can hear the conversation partners)
-* Customizable 3D position for playback
+* [Customizable](/readme.md#configuration-file) audio mode for playback (left, right or stereo)
 
 ## Audio Player
 * Sounds in the respective sound pack (`%appdata%\TS3Client\plugins\SaltyChat`) can be played and stopped
 * Play multiple sounds at the same time (e.g. a ringtone and vibration)
 * Clean looping of sounds
 * Global overwriting of sounds (`%appdata%\TS3Client\plugins\SaltyChat\override`)
+* Fallback if a file is missing (override > specified sound pack > default sound pack)
 
 # Configuration file
 When the plugin is starting, the configuration file under `%appdata%\TS3Client\plugins\SaltyChat\settings.json` will be loaded an applied.
@@ -52,9 +55,9 @@ OriginExceptions | Exceptions for the source of a WebSocket connection - e.g. yo
 Is3dEnabled | Enables/disables 3D audio
 IsDebugLoggingEnabled | Enables/disables simple debug logging - should only be switched on when needed
 IsExtensiveLoggingEnabled | Enables/disables extensive debug logging - should only be turned on when needed
-PhoneOffset | 3D position for phone playback
-RadioOffset | 3D position for radio playback
-SecondaryRadioOffset | 3D position for secondary radio playback
+PhoneOffset | Audio mode for phone playback (Stereo, LeftOnly or RightOnly)
+RadioOffset | Audio mode for radio playback (Stereo, LeftOnly or RightOnly)
+SecondaryRadioOffset | Audio mode for secondary radio playback (Stereo, LeftOnly or RightOnly)
 
 # Versioning and Update Branches
 With version 0.4.0 we introduce a new versioning schema for Salty Chat.  
