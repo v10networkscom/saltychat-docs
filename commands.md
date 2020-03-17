@@ -92,7 +92,7 @@ Property | Type | Description
 ------------ | ------------- | -------------
 Position | `Vector3` | The players 3D position
 Rotation | `float` | The rotation of the player (-180 to 180)
-VoiceEffect | `VoiceEffect` | [Flags of effects](https://github.com/saltminede/saltychat-docs/blob/master/enums.md#voiceeffect) that should be applied to the voice
+VoiceEffect | `VoiceEffect` | [Flags of effects](/enums.md#voiceeffect) that should be applied to the voice
 
 Example:
 ```json
