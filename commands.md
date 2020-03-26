@@ -286,3 +286,35 @@ Example:
 ```json
 { "Command": 15, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "2913e966dd7b4d5a", "IsTalking": true } }
 ```
+
+## 16 – MegaphoneCommunicationUpdate
+Used to start, update or end a megaphone effect. 
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+Name | `string` | TeamSpeak name of the player
+Range | `float` | Range where the player can be heard through the megaphone
+Volume | `float?` | Overrides the volume
+
+Example:
+```json
+{ "Command": 16, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes", "Range": 100.0, "Volume": null } }
+```
+
+## 17 – StopMegaphoneCommunication
+Used to end a megaphone effect. 
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+Name | `string` | TeamSpeak name of the player
+
+Example:
+```json
+{ "Command": 17, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes" } }
+```

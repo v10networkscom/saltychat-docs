@@ -17,7 +17,7 @@ Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https
 * Adjustable ranges (for e.g. whispering and screaming)
 * Distance-based flattening of the volume
 * Multiple audio streams for one player (in combination with phone and radio)
-* Voice effects (e.g. echo)
+* Voice effects (e.g. echo and megaphone)
 
 ## Radio
 * Realistic voice distortion

@@ -33,7 +33,9 @@ enum Command
     PlaySound = 12,
     StopSound = 13,
     BulkUpdate = 14,
-    TalkStateChange = 15
+    TalkStateChange = 15,
+    MegaphoneCommunicationUpdate = 16,
+    StopMegaphoneCommunication = 17
 }
 ```
 
