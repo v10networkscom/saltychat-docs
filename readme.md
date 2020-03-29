@@ -79,6 +79,13 @@ Stable | Any change is tested in the previous branches and was found to be stabl
 Testing | Public testing branch, where all changes can be tested. We recommend that this branch is only used by developers, who are familiar with the plugin and can debug any issues.
 PreBuild | Private testing branch, where **untested** changes are made. Versions using this branch are distributed by Salty Chat developers and are meant to test specific changes, before releasing them to the testing branch.
 
+# TeamSpeak Server Settings
+To avoid issues with your TeamSpeak server, we recommend the following settings:
+* Manage Virtual Server --> `Misc` tab --> `Min clients in channel before silence`: More then your server slots
+* Adjust anti-flood
+   * Method 1: Manage Virtual Server --> `Anti-Flood` tab --> adjust values as needed
+   * Method 2: Set `b_client_ignore_antiflood` permission flag to the group your users are in
+
 # Available resources
 Mod | Language | Maintainer | Link | Comment |
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
@@ -87,3 +94,12 @@ RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
 RAGEMP | TypeScript | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only |
 alt:V | C#/JS | [WhishN](https://github.com/WhishN) | [repo](https://github.com/WhishN/saltychat-altV) | - |
+
+# Credits
+We are using code from the following open source projects:
+* [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
+* [RadioFX](https://github.com/thorwe/teamspeak-plugin-radiofx)
+* [DSPFilters](https://github.com/vinniefalco/DSPFilters)
+* [Fleck](https://github.com/statianzo/Fleck)
+
+Sounds we ship in the `default` sound pack are made by [BeatbaronTV](https://twitter.com/BeatbaronTV), except from the radio sounds, these are recorded from two `Motorola Talkabout T82 Extreme` we bought for this.
