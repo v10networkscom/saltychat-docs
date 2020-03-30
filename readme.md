@@ -52,6 +52,7 @@ Parameter | Description
 WebSocketAddress | Address and port on which the WebSocket server binds
 UpdateBranch | Update branch which is queried for a new version through our version API
 OriginExceptions | Exceptions for the source of a WebSocket connection - e.g. you surf on saltmine.de, locally executed JavaScript can connect to the WebSocket, whereby the source would then be `https://saltmine.de`
+InstanceTimeout | Time in seconds after which the instance will reset without a pong
 Is3dEnabled | Enables/disables 3D audio
 IsDebugLoggingEnabled | Enables/disables simple debug logging - should only be switched on when needed
 IsExtensiveLoggingEnabled | Enables/disables extensive debug logging - should only be turned on when needed
