@@ -145,8 +145,8 @@ Parameter object:
 Property | Type | Description
 ------------ | ------------- | -------------
 Name | `string` | TeamSpeak name of the player
-SignalStrength | `int` | Determines the level of voice distortion (0 = Good qulity)
-Volume | `float?` | Overrides the volume
+SignalStrength | `int` | Determines the level of voice distortion (0 = Good qulity, 18 = worst quality)
+Volume | `float?` | Overrides the volume `available (0 - 20)`
 Direct | `bool` | `true` if the communication is direct, `false` to relay the communication through other players (`RelayedBy`)
 RelayedBy | `string[]` | string array of TeamSpeak names from players that are relaying the communication (loudspeaker)
 
@@ -197,7 +197,7 @@ Name | `string` | TeamSpeak name of the player
 SenderRadioType | `RadioType` | Radio type of the sending player
 OwnRadioType | `RadioType` | The local players radio type
 PlayMicClick | `bool` | If `true` Salty Chat will automatically play the sound "onMicClick" or "offMicClick" of the specified sound pack, if the player is in range
-Volume | `float?` | Overrides the volume
+Volume | `float?` | Overrides the volume `available (0 - 20)`
 Direct | `bool` | `true` if the communication is direct, `false` to relay the communication through other players (`RelayedBy`)
 Secondary | `bool` | `true` if the communication is on the secondary channel
 RelayedBy | `string[]` | string array of TeamSpeak names from players that are relaying the communication (loudspeaker)
@@ -297,7 +297,7 @@ Property | Type | Description
 ------------ | ------------- | -------------
 Name | `string` | TeamSpeak name of the player
 Range | `float` | Range where the player can be heard through the megaphone
-Volume | `float?` | Overrides the volume
+Volume | `float?` | Overrides the volume `available (0 - 20)`
 
 Example:
 ```json
