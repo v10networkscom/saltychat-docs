@@ -17,7 +17,10 @@ Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https
 * Adjustable ranges (for e.g. whispering and screaming)
 * Distance-based flattening of the volume
 * Multiple audio streams for one player (in combination with phone and radio)
-* Voice effects (e.g. echo and megaphone)
+* Voice effects
+   * Muffling - Are you behind a wall?
+   * Echo - Tunnel? HELLO...hello...hello
+   * Megaphone - Police, stop right there!
 
 ## Radio
 * Realistic voice distortion
@@ -93,7 +96,7 @@ Mod | Language | Maintainer | Link | Comment |
 FiveM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-fivem) | - |
 RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-redm) | - |
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
-RAGEMP | TypeScript | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only |
+RAGEMP | TypeScript | - | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only |
 alt:V | C#/JS | [WhishN](https://github.com/WhishN) | [repo](https://github.com/WhishN/saltychat-altV) | - |
 
 # Credits
@@ -104,3 +107,5 @@ We are using code from the following open source projects:
 * [Fleck](https://github.com/statianzo/Fleck)
 
 Sounds we ship in the `default` sound pack are made by [BeatbaronTV](https://twitter.com/BeatbaronTV), except from the radio sounds, these are recorded from two `Motorola Talkabout T82 Extreme` we bought for this.
+
+Since this plugin is completely free to use, please consider supporting us with a donation through our [website](https://www.saltmine.de/), especially if you are running a project and have some leftovers or making profit while using Salty Chat.
