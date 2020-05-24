@@ -81,7 +81,7 @@ Branch | Description
 ------------ | -------------
 Stable | Any change is tested in the previous branches and was found to be stable.
 Testing | Public testing branch, where all changes can be tested. We recommend that this branch is only used by developers, who are familiar with the plugin and can debug any issues.
-PreBuild | Private testing branch, where **untested** changes are made. Versions using this branch are distributed by Salty Chat developers and are meant to test specific changes, before releasing them to the testing branch.
+Preview | Private testing branch, where **untested** changes are made. Versions using this branch are distributed by Salty Chat developers and are meant to test specific changes, before releasing them to the testing branch.
 
 # TeamSpeak Server Settings
 To avoid issues with your TeamSpeak server, we recommend the following settings:

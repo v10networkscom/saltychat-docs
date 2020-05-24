@@ -11,7 +11,7 @@ If you specify a required update branch, the plugin of all players have to use t
 Update Branches:
 * `Stable`
 * `Testing`
-* `PreBuild`
+* `Preview`
 
 ## MinimumPluginVersion
 The plugin must have atleast the specified version, e. g. `0.3.11`.
