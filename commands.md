@@ -141,7 +141,7 @@ Position | `Vector3` | The players 3D position
 Rotation | `float` | The rotation of the player
 VoiceRange | `float` | Range the player can be heard (proximity voice)
 IsAlive | `bool` | If `false` the player can't be heard
-VolumeOverride | `float?` | Overrides the volume calculated by proximity voice (based on the distance)
+VolumeOverride | `float?` | Overrides the volume calculated by proximity voice (0f - 1.6f / 0 - 160%)
 NoLoS | `bool` | `true` to enable a muffling sound effect
 DistanceCulled | `bool` | `true` to remove player from proximity calculation
 
@@ -238,8 +238,8 @@ Parameter object:
 Property | Type | Description
 ------------ | ------------- | -------------
 Name | `string` | TeamSpeak name of the player
-SignalStrength | `int` | Determines the level of voice distortion (0 = Good qulity)
-Volume | `float?` | Overrides the volume
+SignalStrength | `int` | Determines the level of voice distortion (0 = Good qulity, 20 = worst quality)
+Volume | `float?` | Overrides the volume in percent (0f - 1.6f / 0 - 160%)
 Direct | `bool` | `true` if the communication is direct, `false` to relay the communication through other players (`RelayedBy`)
 RelayedBy | `string[]` | string array of TeamSpeak names from players that are relaying the communication (loudspeaker)
 
@@ -275,7 +275,7 @@ Name | `string` | TeamSpeak name of the player
 SenderRadioType | `RadioType` | Radio type of the sending player
 OwnRadioType | `RadioType` | The local players radio type
 PlayMicClick | `bool` | If `true` Salty Chat will automatically play the sound "onMicClick" or "offMicClick" of the specified sound pack, if the player is in range
-Volume | `float?` | Overrides the volume
+Volume | `float?` | Overrides the volume in percent (0f - 1.6f / 0 - 160%)
 Direct | `bool` | `true` if the communication is direct, `false` to relay the communication through other players (`RelayedBy`)
 Secondary | `bool` | `true` if the communication is on the secondary channel
 RelayedBy | `string[]` | string array of TeamSpeak names from players that are relaying the communication (loudspeaker)
@@ -326,7 +326,7 @@ Property | Type | Description
 ------------ | ------------- | -------------
 Name | `string` | TeamSpeak name of the player
 Range | `float` | Range where the player can be heard through the megaphone
-Volume | `float?` | Overrides the volume
+Volume | `float?` | Overrides the volume in percent (0f - 1.6f / 0 - 160%)
 
 Example:
 ```json
