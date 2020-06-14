@@ -101,8 +101,10 @@ Parameter object:
 
 Property | Type | Description
 ------------ | ------------- | -------------
-IsMicrophoneMuted | `bool` | `true` if the microphone is muted on TeamSpeak
-IsSoundMuted | `bool` | `true` if the sound is muted on TeamSpeak
+IsMicrophoneMuted | `bool` | `true` if the microphone in TeamSpeak is muted
+IsMicrophoneEnabled | `bool` | `true` if the microphone in TeamSpeak is enabled
+IsSoundMuted | `bool` | `true` if the sound in TeamSpeak is muted
+IsSoundEnabled | `bool` | `true` if the sound in TeamSpeak is enabled
 
 Example:
 ```json
