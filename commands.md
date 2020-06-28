@@ -142,8 +142,8 @@ Rotation | `float` | The rotation of the player
 VoiceRange | `float` | Range the player can be heard (proximity voice)
 IsAlive | `bool` | If `false` the player can't be heard
 VolumeOverride | `float?` | Overrides the volume calculated by proximity voice (0f - 1.6f / 0 - 160%)
-NoLoS | `bool` | `true` to enable a muffling sound effect
 DistanceCulled | `bool` | `true` to remove player from proximity calculation
+MuffleIntensity | `int?` | `null` to disbale effect; range: 0 (lowest) - 10 (highest)
 
 Example:
 ```json
