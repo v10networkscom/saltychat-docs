@@ -96,7 +96,7 @@ Mod | Language | Maintainer | Link | Comment |
 FiveM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-fivem) | - |
 RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-redm) | - |
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
-RAGEMP | TypeScript | - | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only |
+RAGEMP | TypeScript | discontinued | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only, outdated |
 alt:V | C#/JS | [WhishN](https://github.com/WhishN) | [repo](https://github.com/WhishN/saltychat-altV) | - |
 
 # Credits
