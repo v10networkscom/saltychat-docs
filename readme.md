@@ -57,11 +57,12 @@ UpdateBranch | Update branch which is queried for a new version through our vers
 OriginExceptions | Exceptions for the source of a WebSocket connection - e.g. you surf on saltmine.de, locally executed JavaScript can connect to the WebSocket, whereby the source would then be `https://saltmine.de`
 InstanceTimeout | Time in seconds after which the instance will reset without a pong
 Is3dEnabled | Enables/disables 3D audio
-IsDebugLoggingEnabled | Enables/disables simple debug logging - should only be switched on when needed
-IsExtensiveLoggingEnabled | Enables/disables extensive debug logging - should only be turned on when needed
-PhoneOffset | Audio mode for phone playback (Stereo, LeftOnly or RightOnly)
-RadioOffset | Audio mode for radio playback (Stereo, LeftOnly or RightOnly)
-SecondaryRadioOffset | Audio mode for secondary radio playback (Stereo, LeftOnly or RightOnly)
+ExpertMode | Enables/disables export mode in settings menu
+LogLevel | Defines how extensive the logging will be (`Error`, `Warning`, `Info`, `Debug` or `Extensive`)
+PhoneOffset | Audio mode for phone playback (`Stereo`, `LeftOnly` or `RightOnly`)
+RadioOffset | Audio mode for radio playback (`Stereo`, `LeftOnly` or `RightOnly`)
+SecondaryRadioOffset | Audio mode for secondary radio playback (`Stereo`, `LeftOnly` or `RightOnly`)
+MicClickMode | Overrides `PlayMicClick` property on radio communications (`ScriptDependent`, `Never` or `Always`)
 
 # Versioning and Update Branches
 With version 0.4.0 we introduce a new versioning schema for Salty Chat.  
