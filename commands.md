@@ -129,8 +129,8 @@ EchoEffect object:
 Property | Type | Description
 ------------ | ------------- | -------------
 Duration | `int` | How long the effect will reuse voice samples (in 10ms steps - default: `100` = 1sec)
-Rolloff | `float` | Factor by which the volume will roll of on each run; value must be > 0f and < 1f (default: `0.3f`)
-Delay | `int` | Time is takes replay the samples (in 10ms steps - default: `25` = 250ms)
+Rolloff | `float` | Factor by which the volume will roll off on each run; value must be > 0f and < 1f (default: `0.3f`)
+Delay | `int` | Time it takes to replay samples (in 10ms steps - default: `25` = 250ms)
 
 Example:
 ```json
@@ -174,7 +174,7 @@ Parameter object:
 Property | Type | Description
 ------------ | ------------- | -------------
 PlayerStates | `PlayerState[]` | Array of player states
-SelfState | `PlayerState` | Own player state
+SelfState | `SelfState` | Own player state
 
 Example:
 ```json
