@@ -73,12 +73,3 @@ enum UpdateBranch
     Preview = 2
 }
 ```
-
-## VoiceEffect
-```csharp
-[Flags]
-enum VoiceEffect
-{
-    Echo = 1
-}
-```

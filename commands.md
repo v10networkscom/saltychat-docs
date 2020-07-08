@@ -121,11 +121,20 @@ Property | Type | Description
 ------------ | ------------- | -------------
 Position | `Vector3` | The players 3D position
 Rotation | `float` | The rotation of the player (-180 to 180)
-VoiceEffect | `VoiceEffect` | [Flags of effects](/enums.md#voiceeffect) that should be applied to the voice
+IsAlive | `bool` | If `false` the player can't hear anyone (default: `true`)
+Echo | `EchoEffect` | `null` to disable effect, otherwhise specify effect properties
+
+EchoEffect object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+Duration | `int` | How long the effect will reuse voice samples (in 10ms steps | default: `100` = 1sec)
+Rolloff | `float` | Factor by which the volume will roll of on each run; value must be > 0f and < 1f (default: `0.3f`)
+Delay | `int` | Time is takes replay the samples (in 10ms steps | default: `25` = 250ms)
 
 Example:
 ```json
-{ "Command": 7, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Position": { "X": 2.5, "Y": 231.2, "Z": -22.1 }, "Rotation": 0.0 } }
+{ "Command": 7, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Position": { "X": 2.5, "Y": 231.2, "Z": -22.1 }, "Rotation": 0.0, "IsAlive": true, "Echo": { "Duration": 100, "Rolloff": 0.3, "Delay": 25 } } }
 ```
 
 ## 8 – PlayerStateUpdate
@@ -140,14 +149,20 @@ Name | `string` | TeamSpeak name of the player
 Position | `Vector3` | The players 3D position
 Rotation | `float` | The rotation of the player
 VoiceRange | `float` | Range the player can be heard (proximity voice)
-IsAlive | `bool` | If `false` the player can't be heard
+IsAlive | `bool` | If `false` the player can't be heard (default: `true`)
 VolumeOverride | `float?` | Overrides the volume calculated by proximity voice (0f - 1.6f / 0 - 160%)
 DistanceCulled | `bool` | `true` to remove player from proximity calculation
-MuffleIntensity | `int?` | `null` to disbale effect; range: 0 (lowest) - 10 (highest)
+Muffle | `MuffleEffect` | `null` to disbale effect, otherwhise specify effect properties
+
+MuffleEffect object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+Intensity | `int` | Intensity of the muffle effect; range: 0 (lowest) - 10 (highest) (default: `10`)
 
 Example:
 ```json
-{ "Command": 8, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes", "Position": { "X": 12.5, "Y": -211.5, "Z": 24.9 }, "Rotation": 0.0, "VoiceRange": 22.0, "IsAlive": true, "VolumeOverride": null, "NoLoS": false, "DistanceCulled": false } }
+{ "Command": 8, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes", "Position": { "X": 12.5, "Y": -211.5, "Z": 24.9 }, "Rotation": 0.0, "VoiceRange": 22.0, "IsAlive": true, "VolumeOverride": null, "NoLoS": false, "DistanceCulled": false, "Muffle": { "Intensity": 10 } } }
 ```
 
 ## 9 – BulkUpdate
