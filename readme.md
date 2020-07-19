@@ -99,6 +99,8 @@ RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
 RAGEMP | TypeScript | discontinued | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only, outdated |
 alt:V | C#/JS | discontinued | [repo](https://github.com/WhishN/saltychat-altV) | outdated |
+alt:V | C#/JS | [DampflokTV](https://github.com/ripkens/SaltyChat-AltV) | [repo](https://github.com/ripkens/SaltyChat-AltV) | - |
+
 
 # Credits
 We are using code from the following open source projects:
