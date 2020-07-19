@@ -98,9 +98,8 @@ FiveM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://githu
 RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-redm) | - |
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
 RAGEMP | TypeScript | discontinued | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only, outdated |
-alt:V | C#/JS | discontinued | [repo](https://github.com/WhishN/saltychat-altV) | outdated |
 alt:V | C#/JS | [DampflokTV](https://github.com/ripkens/SaltyChat-AltV) | [repo](https://github.com/ripkens/SaltyChat-AltV) | - |
-
+alt:V | C#/JS | discontinued | [repo](https://github.com/WhishN/saltychat-altV) | outdated |
 
 # Credits
 We are using code from the following open source projects:
