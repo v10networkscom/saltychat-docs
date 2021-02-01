@@ -37,10 +37,12 @@ ChannelId | `uint64` | ID of the channel the client will be moved to
 ChannelPassword | `string` | Password of the channel
 SoundPack | `string` | The name of the sound pack that will be used for the instance
 SwissChannelIds | `uint64[]` | IDs of neutral channels that can be joined, while the game instance is running
+SendTalkStates | `bool` | `false` if `TalkState`s shouldn't be sent for other players to reduce events, `true` by default
+SendRadioTrafficStates | `bool` | `true` to receive `RadioTrafficState`, `false` by default
 
 Example:
 ```json
-{ "Command": 1, "ServerUniqueIdentifier": null, "Parameter": { "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Name": "abc12345", "ChannelId": 64, "ChannelPassword": null, "SoundPack": "default" } }
+{ "Command": 1, "ServerUniqueIdentifier": null, "Parameter": { "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Name": "abc12345", "ChannelId": 64, "ChannelPassword": null, "SoundPack": "default", "SwissChannelIds": [ 32, 33 ], "SendTalkStates": true, "SendRadioTrafficStates": false } }
 ```
 
 ## 2 – Reset
@@ -91,7 +93,7 @@ State | `GameInstanceState` | State of the specified game instance
 
 Example:
 ```json
-{ "Command": 5, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "IsConnectedToServer": true, "IsReady": true } }
+{ "Command": 5, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "IsConnectedToServer": true, "IsReady": true, "State": 2 } }
 ```
 
 ## 6 – SoundState
@@ -332,7 +334,7 @@ Example:
 { "Command": 32, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Towers": [{ "X": 942.5, "Y": -942.0, "Z": 41.5 }, { "X": 357.2, "Y": -811.5, "Z": 29.9 }, { "X": 55.5, "Y": 871.5, "Z": -52.3 }, { "X": 752.3, "Y": 358.2, "Z": -32.6 } ]} }
 ```
 
-## 33 – RadioTrafficeState
+## 33 – RadioTrafficState
 Sent by the plugin when radio traffic is received, breaks up or ends.
 
 ServerUniqueIdentifier required: Yes  

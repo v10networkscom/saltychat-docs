@@ -54,7 +54,7 @@ enum Command
     RadioCommunicationUpdate = 30,
     StopRadioCommunication = 31,
     RadioTowerUpdate = 32,
-    RadioTrafficeState = 33,
+    RadioTrafficState = 33,
 
     // Megaphone
     MegaphoneCommunicationUpdate = 40,
