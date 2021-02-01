@@ -1,5 +1,16 @@
 # Enums
 
+## Game Instance State
+```csharp
+enum GameInstanceState
+{
+    NotConnected = 0,
+    Connected = 1,
+    Ingame = 2,
+    InSwissChannel = 3,
+}
+```
+
 ## Radio Type
 ```csharp
 [Flags]
@@ -43,6 +54,7 @@ enum Command
     RadioCommunicationUpdate = 30,
     StopRadioCommunication = 31,
     RadioTowerUpdate = 32,
+    RadioTrafficeState = 33,
 
     // Megaphone
     MegaphoneCommunicationUpdate = 40,

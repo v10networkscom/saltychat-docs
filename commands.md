@@ -85,8 +85,9 @@ Parameter object:
 
 Property | Type | Description
 ------------ | ------------- | -------------
-IsConnectedToServer | `bool` | Indicates if TeamSpeak is connected to the server with the UID specified in "Initiate"
-IsReady | `bool` | Is `true` if the TeamSpeak client is connected to the specified server and in the correct channel
+IsConnectedToServer (obsolete) | `bool` | Indicates if TeamSpeak is connected to the server with the UID specified in "Initiate" - will be removed in the future
+IsReady (obsolete) | `bool` | Is `true` if the TeamSpeak client is connected to the specified server and in the correct channel - will be removed in the future
+State | `GameInstanceState` | State of the specified game instance
 
 Example:
 ```json
@@ -329,6 +330,24 @@ Towers | `Vector3[]` | Array of Vector3 positions representing the radio tower p
 Example:
 ```json
 { "Command": 32, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Towers": [{ "X": 942.5, "Y": -942.0, "Z": 41.5 }, { "X": 357.2, "Y": -811.5, "Z": 29.9 }, { "X": 55.5, "Y": 871.5, "Z": -52.3 }, { "X": 752.3, "Y": 358.2, "Z": -32.6 } ]} }
+```
+
+## 33 – RadioTrafficeState
+Sent by the plugin when radio traffic is received, breaks up or ends.
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+Name | `string` | TeamSpeak name of the player
+IsSending | `bool` | `true` when radio traffic is received, `false` when radio traffic breaks or ends
+IsPrimaryChannel | `bool` | `true` radio traffic is received on primary channel, `false` when radio traffic is received on secondary channel
+ActiveRelay | `string` | TeamSpeak name of the active relay (only if someone near you has the speaker enabled)
+
+Example:
+```json
+{ "Command": 33, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes", "IsSending": true, "PrimaryChannel": true, "ActiveRelay": null } }
 ```
 
 ## 40 – MegaphoneCommunicationUpdate
