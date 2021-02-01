@@ -6,13 +6,6 @@ The easiest way to get your Server UID, is to install [Salty Chat](https://www.s
 
 ![alt text][setup-server-uid]
 
-## RequiredUpdateBranch
-If you specify a required update branch, the plugin of all players have to use the specified update branch.  
-Update Branches:
-* `Stable`
-* `Testing`
-* `Preview`
-
 ## MinimumPluginVersion
 The plugin must have atleast the specified version, e. g. `0.3.11`.
 
