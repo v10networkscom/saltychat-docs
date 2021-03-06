@@ -33,6 +33,8 @@ Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https
 * Loudspeaker (players can listen to the radio traffic)
 * [Customizable](/readme.md#configuration-file) audio mode for playback (left, right or stereo)
 
+![alt text][concept-radio-modes]
+
 ## Phone
 * Realistic voice distortion
 * Distortion based on signal strength
@@ -111,3 +113,5 @@ We are using code from the following open source projects:
 Sounds we ship in the `default` sound pack are made by [BeatbaronTV](https://twitter.com/BeatbaronTV), except from the radio sounds, these are recorded from two `Motorola Talkabout T82 Extreme` we bought for this.
 
 Since this plugin is completely free to use, please consider supporting us with a donation through our [website](https://www.saltmine.de/), especially if you are running a project and have some leftovers or making profit while using Salty Chat.
+
+[concept-radio-modes]: https://github.com/saltminede/saltychat-docs/raw/master/media/concept-radio-modes.jpg "Radio Modes"
