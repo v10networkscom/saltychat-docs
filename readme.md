@@ -100,7 +100,7 @@ FiveM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://githu
 RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-redm) | - |
 RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
 RAGEMP | TypeScript | discontinued | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only, outdated |
-alt:V | C#/TS | [Deluvas1911](https://github.com/deluvas1911)/[THEONLYLUCIF3R](https://github.com/THEONLYLUCIF3R) | [repo](https://github.com/deluvas1911/saltychat-altv) | recommended |
+alt:V | C#/TS | [deluvas1911](https://github.com/deluvas1911) | [repo](https://github.com/deluvas1911/saltychat-altv) | - |
 alt:V | C#/JS | [Vesturo](https://github.com/vesturo/SaltyChat-AltV) | [repo](https://github.com/vesturo/SaltyChat-AltV) | - |
 
 # Credits
