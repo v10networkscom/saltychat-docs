@@ -330,7 +330,7 @@ Parameter object:
 
 Property | Type | Description
 ------------ | ------------- | -------------
-Towers | `Tower[]` | Array of Vector3 positions representing the radio tower positions
+Towers | `Tower[]` | Array of all radio towers, see `Tower` object below
 
 Tower object:
 
