@@ -39,10 +39,13 @@ SoundPack | `string` | The name of the sound pack that will be used for the inst
 SwissChannelIds | `uint64[]` | IDs of neutral channels that can be joined, while the game instance is running
 SendTalkStates | `bool` | `false` if `TalkState`s shouldn't be sent for other players to reduce events, `true` by default
 SendRadioTrafficStates | `bool` | `true` to receive `RadioTrafficState`, `false` by default
+UltraShortRangeDistance | `float` | Maximum range of USR radio mode, `1800f` by default
+ShortRangeDistance | `float` | Maximum range of SR radio mode, `3000f` by default
+LongRangeDistace | `float` | Maximum range of LR radio mode, `8000f` by default
 
 Example:
 ```json
-{ "Command": 1, "ServerUniqueIdentifier": null, "Parameter": { "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Name": "abc12345", "ChannelId": 64, "ChannelPassword": null, "SoundPack": "default", "SwissChannelIds": [ 32, 33 ], "SendTalkStates": true, "SendRadioTrafficStates": false } }
+{ "Command": 1, "ServerUniqueIdentifier": null, "Parameter": { "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Name": "abc12345", "ChannelId": 64, "ChannelPassword": null, "SoundPack": "default", "SwissChannelIds": [ 32, 33 ], "SendTalkStates": true, "SendRadioTrafficStates": false, "UltraShortRangeDistance": 1800.0, "ShortRangeDistance": 3000.0, "LongRangeDistace": 8000.0 } }
 ```
 
 ## 2 – Reset
@@ -327,11 +330,20 @@ Parameter object:
 
 Property | Type | Description
 ------------ | ------------- | -------------
-Towers | `Vector3[]` | Array of Vector3 positions representing the radio tower positions
+Towers | `Tower[]` | Array of Vector3 positions representing the radio tower positions
+
+Tower object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+X | `float` | X coord of the Tower
+Y | `float` | Y coord of the Tower
+Z | `float` | Z coord of the Tower
+Range | `float` | Maximum range of the tower - `8000f` by default
 
 Example:
 ```json
-{ "Command": 32, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Towers": [{ "X": 942.5, "Y": -942.0, "Z": 41.5 }, { "X": 357.2, "Y": -811.5, "Z": 29.9 }, { "X": 55.5, "Y": 871.5, "Z": -52.3 }, { "X": 752.3, "Y": 358.2, "Z": -32.6 } ]} }
+{ "Command": 32, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Towers": [{ "X": 942.5, "Y": -942.0, "Z": 41.5, "Range": 5000.0 }, { "X": 357.2, "Y": -811.5, "Z": 29.9, "Range": 9000.0 }, { "X": 55.5, "Y": 871.5, "Z": -52.3 }, { "X": 752.3, "Y": 358.2, "Z": -32.6 } ]} }
 ```
 
 ## 33 – RadioTrafficState
