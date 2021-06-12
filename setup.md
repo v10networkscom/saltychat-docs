@@ -31,7 +31,10 @@ Password of the TeamSpeak channel.
 [setup-channel-id]: https://github.com/saltminede/saltychat-docs/raw/master/media/setup-channel-id.jpg "TeamSpeak Channel ID"
 
 ## SwissChannelIds
-IDs of neutral channels that can be joined, while the game instance is running.  
-While moving in one of these channels, the plugin will restore the original TeamSpeak name.  
-The client will be automaticly renamed to the instance name, once the swiss channel is leaved, which also results in a move to the instance channel.
-While being in the swiss channel the plugin won't move the client to the instance channel.
+IDs of the channels that can be entered while the game instance is running, without the client being automatically pushed back to the ingame channel.\
+As soon as the client enters a swiss channel, the original TeamSpeak name is restored.
+
+If the client is in a swiss channel while the game instance is initialized, the plugin will move it to the ingame channel and rename it only after leaving the swiss channel.
+
+Note: If the ingame channel is declared as swiss channel, the player will not be moved to his original channel after disconnecting.
+If the waiting room is declared as a swiss channel, no automatic joining of the ingame channel takes place until the waiting room is left.
