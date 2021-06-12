@@ -48,6 +48,14 @@ Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https
 * Global overwriting of sounds (`%appdata%\TS3Client\plugins\SaltyChat\override`)
 * Fallback if a file is missing (override > specified sound pack > default sound pack)
 
+# Swiss Channels
+In the [configuration file](https://github.com/saltminede/saltychat-docs/blob/master/setup.md#swisschannelids) there is the possibility to declare TeamSpeak channels as swiss channels.\
+Swiss channels are channels in which the plugin keeps the original name of the client and does not move them to the ingame channel.
+
+If a client leaves the [ingame channel](https://github.com/saltminede/saltychat-docs/blob/master/setup.md#ingamechannelid) and enters a swiss channel, the plugin will change the clients TeamSpeak name back to its origin and won't move the client to the ingame channel as long as it is in a swiss channel.
+
+Note: The ingame channel should not be declared as a swiss channel, otherwise the clients won't be moved out of it after disconnecting from the server.
+
 # Configuration file
 When the plugin is starting, the configuration file under `%appdata%\TS3Client\plugins\SaltyChat\settings.json` will be loaded an applied.
 Here are various options that can be customized:
