@@ -34,3 +34,4 @@ Password of the TeamSpeak channel.
 IDs of neutral channels that can be joined, while the game instance is running.  
 While moving in one of these channels, the plugin will restore the original TeamSpeak name.  
 The client will be automaticly renamed to the instance name, once the swiss channel is leaved, which also results in a move to the instance channel.
+While being in the swiss channel the plugin won't move the client to the instance channel.
