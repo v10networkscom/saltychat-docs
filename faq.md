@@ -4,85 +4,88 @@
 
 - [Where can I download an old version?](#where-can-i-download-an-old-version)
 - [How to enable extensive logging?](#how-to-enable-extensive-logging)
-- [My teamspeak crashs](#my-teamspeak-crashs)
+- [My TeamSpeak crashes](#my-teamspeak-crashes)
 - [Installation of Salty Chat is corrupt](#installation-of-salty-chat-is-corrupt)
-- [*.ts3_plugin is unknown file / opened in wrong program](#ts3_plugin-is-unknown-file)
-- [FiveM/RedM/LibertyM: NUI stuck at "Connecting..."](#fivem-nui-stuck-at-connecting) 
+- [*.ts3_plugin is unknown file / opened in wrong program](#ts3_plugin-is-an-unknown-file)
+- [FiveM/RedM/LibertyM (CFX): NUI stuck at "Connecting..."](#cfx-nui-stuck-at-connecting) 
 
 ## Where can I download an old version?
 
-Before downloading an older version, take a look at the [versioning scheme](https://github.com/saltminede/saltychat-docs#versioning-and-update-branches) to see if it's compatible with the servers script version.
+In most cases you don't need an older version, because each version within a major release is compatible with each other (see [versioning scheme](/readme.md#versioning-and-update-branches)).\
+If you are experiencing issues with the latest version, you should create a detailed bug report here on [GitHub](https://github.com/saltminede/saltychat-docs/issues/new) or our Discord.
 
-The download of older versions is available at the following address: `https://www.saltmine.de/saltychat/download/x.x.x`, where **x.x.x** must be replaced with the required version.
+We provide older versions in case the latest version is unusable for your case, but we don't provide any guarantee for availability of older versions and will not support them.\
+The download of specific versions is available at `https://www.saltmine.de/saltychat/download/x.x.x`, where **x.x.x** must be replaced with the desired version.\
 For example, the link for Salty Chat 2.3.3 is `https://www.saltmine.de/saltychat/download/2.3.3`.
-There is no guaranteed availability or support for older versions.
 
 ## How to enable extensive logging?
 
-1. Open your TeamSpeak client
-2. Go to `Plugins > Salty Chat > Open Settings`
-3. Enable `Expert Mode`
-4. Select `Extensive` for `Log Level`
-**Don't enable ExtensiveDebug until further instructions, because this will result in a huge log file.**
+To debug issues and see what Salty Chat is sending/receiving through its WebSocket, you can enable more verbose logging.
+- Open your TeamSpeak client
+- Go to `Plugins` > `Salty Chat` > `Open Settings`
+- Enable `Expert Mode`
+- Select `Extensive` for `Log Level`
 
-## My teamspeak crashs
+To disable extensive logging, you can either disable `Expert Mode` or set `Log Level` to `Info`.\
+**Don't use `ExtensiveDebug` until further instructions, because this will result in a huge log file.**
 
-If your TeamSpeak crashs, update Salty Chat to the latest version. If your TeamSpeak still crashs, follow the steps below:
+## My TeamSpeak crashes
 
-1. Follow the steps in chapter [How to enable extensive logging?](#how-to-enable-extensive-logging), except activating `ExtensiveDebug` instead `Extensive` for `Log Level`
-2. Start your game and try to reproduce to crash TeamSpeaks.
-3. Send us the newest crashdump (you can find it under `%appdata%\TS3Client\crashdumps`) in the Salty Chat Discord.
-    - If there is no crashdump, send us the newest log (you can find it under `%appdata%\TS3Client\logs`)
-4. Provide us informations to reproduce the crash.
+Make sure you are using the latest version of Salty Chat.\
+In case you are experiencing crashes with the latest version, provide us the crashdump (`%appdata%\TS3Client\crashdumps`) and some information about the situation in which the crash occurred. If there is no crashdump, you can provide the log (`%appdata%\TS3Client\logs`).
 
 ## Installation of Salty Chat is corrupt
 
-If you have the following error, follow the steps below:
+If you have the following error, follow the solutions below.
 
-![Installation of Salty Chat is corrupt](https://github.com/saltminede/saltychat-docs/raw/master/media/setup-installation-corrupt.png)
+![Installation of Salty Chat is corrupt](/media/setup-installation-corrupt.png)
 
 ### Solution A
 
 If you updated Salty Chat from a version prior or equal to 2.1.2, you may not have uninstalled Salty Chat before installing the new version:
-
-1. Close TeamSpeak
-2. Delete the files `%AppData%\TS3Client\plugins\SaltyChat.dll` and `%AppData%\TS3Client\plugins\VoiceDistortion.dll`
-3. Install the latest Salty Chat release
+- Close TeamSpeak
+- Delete the the following files:
+  - `%appdata%\TS3Client\plugins\SaltyChat.dll`
+  - `%appdata%\TS3Client\plugins\SaltyChat\VoiceDistortion.dll`
 
 ### Solution B
 
-Install the latest Visual C++ Redistributable:
-- x86: https://aka.ms/vs/16/release/vc_redist.x86.exe
-- x64: https://aka.ms/vs/16/release/vc_redist.x64.exe
+With TeamSpeak x64 and Salty Chat 2.3.3+ you need `Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019` to run the plugin:
+- Close TeamSpeak
+- Download and install the [redist package](https://aka.ms/vs/16/release/vc_redist.x64.exe)
 
 ### Solution C
 
-If this does not help, follow the steps below:
+Check if the library files for voice distortion are present:
+- `%appdata%\TS3Client\plugins\SaltyChat\VoiceDistortion_win32.dll`
+- `%appdata%\TS3Client\plugins\SaltyChat\VoiceDistortion_win64.dll`
 
-1. Unzip the plugin.
-2. Copy the unzipped files.
-3. Go to `%appdata%\TS3Client\plugins` and paste the files.
+If not, follow the [manual installtion](#solution-c-manual-installation) instructions in `*.ts3_plugin is an unknown file`.
 
-This is explained in more detail in the chapter [*.ts3_plugin is unknown file / opened in wrong program](#ts3_plugin-is-unknown-file).
+## *.ts3_plugin is an unknown file
 
-## *.ts3_plugin is unknown file
+If you can't open the `*.ts3_plugin` file or it tries to open it with e.g. notepad, you can use one of the following solutions.
 
-If you can't open the `*.ts3_plugin` file with double click, follow the steps below:
+### Solution A (Open with)
 
-1. Go to `C:\Program Files\TeamSpeak 3 Client` (or where you TeamSpeak is installed).
-2. Run `createfileassoc.exe` as administrator.
+- Right click the `*.ts3_plugin` file
+- `Open with...` or `Open with` > `Choose another app`
+- `More apps` > `Look for antoher app on this PC` (at the botton)
+- Go to your TS installation (probably `C:\Program Files\TeamSpeak 3 Client` or `C:\Program Files (x86)\TeamSpeak 3 Client`)
+- Select `package_inst.exe`
 
-If this does not help, follow the steps below:
+### Solution B (Create file associations)
 
-1. Close TeamSpeak.
-2. Download the plugin.
-3. Unzip the `*.ts3_plugin` (e.g. with 7-Zip or WinRaR)
-4. Go to the extracted directory. There should be a directory named `plugin`.
-5. Copy the content of the directory `plugin`.
-6. Go to %appdata%\TS3Client\plugins. Paste the copied files.
-7. Start TeamSpeak. If the plugin is not enabled you can enable it in the options of your teamspeak.
+- Go to your TS installation (probably `C:\Program Files\TeamSpeak 3 Client` or `C:\Program Files (x86)\TeamSpeak 3 Client`)
+- Run `createfileassoc.exe` as administrator.
 
-## FiveM: NUI stuck at "Connecting..."
+### Solution C (Manual installation)
+
+- Unzip the `*.ts3_plugin` file (e.g. with 7-Zip or WinRaR)
+  - You can rename the file to `*.zip` and open it with the file explorer, so you don't need 3rd party software
+- Copy the contents of the `plugin` directory and paste them into `%appdata%\TS3Client\plugins`
+
+## CFX: NUI stuck at "Connecting..."
 
 CFX team implemented a NUI blacklist and blocked local (`127.0.0.1` and `localhost`) connections.
 To use the plugin without a proxy, you need to make sure that your DNS server can resolve `lh.saltmine.de` to `127.0.0.1`.
@@ -92,21 +95,19 @@ Follow these steps to find out if you can resolve `lh.saltmine.de`:
 1. Open Windows Command Prompt by searching `cmd`
 2. Execute `nslookup lh.saltmine.de`
 
-If it resolved to `127.0.0.1` follow the steps in chapter [How to enable debug logging?](#how-to-enable-debug-logging) and try to find the issue before contacting us.
+If it resolves to `127.0.0.1`, follow the steps in chapter [How to enable debug logging?](#how-to-enable-extensive-logging) and try to find the issue before contacting us.
 
-If it doesn't resolve to `127.0.0.1` try to use a alternative DNS server (e.g. Google DNS or Cloudflare DNS) or add an exception to your router's DNS rebind protection (if possible).
+If it doesn't resolve to `127.0.0.1`, try to use a alternative DNS server (e.g. Google DNS or Cloudflare DNS) or add an exception to your router's DNS rebind protection (if possible).
 
-### Solution A (change DNS server)
+### Solution A (Change DNS server)
 
-See following [guide](https://www.privateinternetaccess.com/blog/changing-your-dns-settings-on-windows-10/) how to change your dns servers.
-Servers you can use for example:
-
+See the guide on [how to change your DNS servers](https://www.privateinternetaccess.com/blog/changing-your-dns-settings-on-windows-10/) and use e.g. public DNS servers:
 - Google DNS server: https://developers.google.com/speed/public-dns/docs/using#addresses
 - Cloudflare DNS server: https://developers.cloudflare.com/1.1.1.1/setting-up-1.1.1.1/windows
 
 Note: If you have an IPv6 address, keep in mind to also change the DNS server for IPv6.
 
-### Solution B (disable DNS rebind protection)
+### Solution B (Disable DNS rebind protection)
 
 The procedure for disabling the dns rebind protection differs depending on the used router model.\
 Check the manual of your router for the exact steps and make sure that the address `lh.saltmine.de` is defined as an exception for the dns rebind protection.
