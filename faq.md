@@ -26,6 +26,8 @@ To debug issues and see what Salty Chat is sending/receiving through its WebSock
 - Enable `Expert Mode`
 - Select `Extensive` for `Log Level`
 
+The log files can be found in your TS3 clients log folder (`%appdata%\TS3Client\logs`).
+
 To disable extensive logging, you can either disable `Expert Mode` or set `Log Level` to `Info`.\
 **Don't use `ExtensiveDebug` until further instructions, because this will result in a huge log file.**
 
