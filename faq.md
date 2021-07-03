@@ -26,6 +26,8 @@ To debug issues and see what Salty Chat is sending/receiving through its WebSock
 - Enable `Expert Mode`
 - Select `Extensive` for `Log Level`
 
+You can get a live feed of the log by pressing `CTRL` + `L` in TeamSpeak (`Tools` > `Client Log`) or find the files at `%appdata%\TS3Client\logs`.
+
 To disable extensive logging, you can either disable `Expert Mode` or set `Log Level` to `Info`.\
 **Don't use `ExtensiveDebug` until further instructions, because this will result in a huge log file.**
 
