@@ -2,7 +2,7 @@
 
 ## ServerUniqueIdentifier
 Identifies your TeamSpeak server, so you can use multiple tabs.  
-The easiest way to get your Server UID, is to install [Salty Chat](https://www.saltmine.de) and click on the server in the channel tree.
+The easiest way to get your Server UID, is to install [Salty Chat](https://gaming.v10networks.com/SaltyChat) and click on the server in the channel tree.
 
 ![alt text][setup-server-uid]
 
@@ -27,8 +27,8 @@ The plugin will automaticly join the channel and rejoin it after moving out of i
 ## IngameChannelPassword
 Password of the TeamSpeak channel.
 
-[setup-server-uid]: https://github.com/saltminede/saltychat-docs/raw/master/media/setup-server-uid.jpg "TeamSpeak Server UID"
-[setup-channel-id]: https://github.com/saltminede/saltychat-docs/raw/master/media/setup-channel-id.jpg "TeamSpeak Channel ID"
+[setup-server-uid]: /media/setup-server-uid.jpg "TeamSpeak Server UID"
+[setup-channel-id]: /media/setup-channel-id.jpg "TeamSpeak Channel ID"
 
 ## SwissChannelIds
 IDs of neutral channels that can be joined, while the game instance is running.  

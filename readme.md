@@ -9,7 +9,7 @@ If you write resources for certain mods or frameworks that we haven't covered, y
 
 You can help us to improve our docs by contributing via pull requests - we appreciate any contribution.
 
-Join our [Discord](https://discord.gg/MBCnqSf) and start with [Salty Chat](https://www.saltmine.de/)!
+Join our [Discord](https://gaming.v10networks.com/Discord) and start with [Salty Chat](https://gaming.v10networks.com/SaltyChat)!
 
 # Features
 ## Proximity
@@ -62,7 +62,7 @@ Parameter | Description
 ------------ | -------------
 WebSocketAddress | Address and port on which the WebSocket server binds
 UpdateBranch | Update branch which is queried for a new version through our version API
-OriginExceptions | Exceptions for the source of a WebSocket connection - e.g. you surf on saltmine.de, locally executed JavaScript can connect to the WebSocket, whereby the source would then be `https://saltmine.de`
+OriginExceptions | Exceptions for the source of a WebSocket connection - e.g. you surf on gaming.v10networks.com, locally executed JavaScript can connect to the WebSocket, whereby the source would then be `https://gaming.v10networks.com`
 InstanceTimeout | Time in seconds after which the instance will reset without a pong
 Is3dEnabled | Enables/disables 3D audio
 ExpertMode | Enables/disables export mode in settings menu
@@ -102,10 +102,9 @@ To avoid issues with your TeamSpeak server, we recommend the following settings:
 # Available resources
 Mod | Language | Maintainer | Link | Comment |
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
-FiveM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-fivem) | - |
-RedM | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-redm) | - |
-RAGEMP | C# | [saltmine.de](https://github.com/saltminede) | [repo](https://github.com/saltminede/saltychat-ragemp) | - |
-RAGEMP | TypeScript | discontinued | [repo](https://github.com/saltminede/saltychat-ragemp-js) | clientside only, outdated |
+FiveM | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-fivem) | - |
+RedM | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-redm) | - |
+RAGEMP | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-ragemp) | - |
 alt:V | C#/TS | [deluvas1911](https://github.com/deluvas1911) | [repo](https://github.com/deluvas1911/saltychat-altv) | - |
 
 # Credits
@@ -117,6 +116,4 @@ We are using code from the following open source projects:
 
 Sounds we ship in the `default` sound pack are made by [BeatbaronTV](https://twitter.com/BeatbaronTV), except from the radio sounds, these are recorded from two `Motorola Talkabout T82 Extreme` we bought for this.
 
-Since this plugin is completely free to use, please consider supporting us with a donation through our [website](https://www.saltmine.de/), especially if you are running a project and have some leftovers or making profit while using Salty Chat.
-
-[concept-radio-modes]: https://github.com/saltminede/saltychat-docs/raw/master/media/concept-radio-modes.jpg "Radio Modes"
+[concept-radio-modes]: /media/concept-radio-modes.jpg "Radio Modes"

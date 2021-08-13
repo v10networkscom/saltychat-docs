@@ -12,11 +12,11 @@
 ## Where can I download an old version?
 
 In most cases you don't need an older version, because each version within a major release is compatible with each other (see [versioning scheme](/readme.md#versioning-and-update-branches)).\
-If you are experiencing issues with the latest version, you should create a detailed bug report here on [GitHub](https://github.com/saltminede/saltychat-docs/issues/new) or our Discord.
+If you are experiencing issues with the latest version, you should create a detailed bug report here on [GitHub](https://github.com/v10networkscom/saltychat-docs/issues/new) or our Discord.
 
 We provide older versions in case the latest version is unusable for your case, but we don't provide any guarantee for availability of older versions and will not support them.\
-The download of specific versions is available at `https://www.saltmine.de/saltychat/download/x.x.x`, where **x.x.x** must be replaced with the desired version.\
-For example, the link for Salty Chat 2.3.3 is `https://www.saltmine.de/saltychat/download/2.3.3`.
+The download of specific versions is available at `https://gaming.v10networks.com/saltychat/download/x.x.x`, where **x.x.x** must be replaced with the desired version.\
+For example, the link for Salty Chat 2.3.3 is `https://gaming.v10networks.com/saltychat/download/2.3.3`.
 
 ## How to enable extensive logging?
 
@@ -90,12 +90,12 @@ If you can't open the `*.ts3_plugin` file or it tries to open it with e.g. notep
 ## CFX: NUI stuck at "Connecting..."
 
 CFX team implemented a NUI blacklist and blocked local (`127.0.0.1` and `localhost`) connections.
-To use the plugin without a proxy, you need to make sure that your DNS server can resolve `lh.saltmine.de` to `127.0.0.1`.
+To use the plugin without a proxy, you need to make sure that your DNS server can resolve `lh.v10.network` to `127.0.0.1`.
 
-Follow these steps to find out if you can resolve `lh.saltmine.de`:
+Follow these steps to find out if you can resolve `lh.v10.network`:
 
 1. Open Windows Command Prompt by searching `cmd`
-2. Execute `nslookup lh.saltmine.de`
+2. Execute `nslookup lh.v10.network`
 
 If it resolves to `127.0.0.1`, follow the steps in chapter [How to enable debug logging?](#how-to-enable-extensive-logging) and try to find the issue before contacting us.
 
@@ -112,4 +112,4 @@ Note: If you have an IPv6 address, keep in mind to also change the DNS server fo
 ### Solution B (Disable DNS rebind protection)
 
 The procedure for disabling the dns rebind protection differs depending on the used router model.\
-Check the manual of your router for the exact steps and make sure that the address `lh.saltmine.de` is defined as an exception for the dns rebind protection.
+Check the manual of your router for the exact steps and make sure that the address `lh.v10.network` is defined as an exception for the dns rebind protection.
