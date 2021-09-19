@@ -125,8 +125,9 @@ Parameter object:
 
 Property | Type | Description
 ------------ | ------------- | -------------
-Position | `Vector3` | The players 3D position
-Rotation | `float` | The rotation of the player (-180 to 180)
+Position | `Vector3` | Player's 3D position
+Rotation | `float` | Rotation of the player (-180 to 180)
+VoiceRange | `float` | Player's voice range
 IsAlive | `bool` | If `false` the player can't hear anyone (default: `true`)
 Echo | `EchoEffect` | `null` to disable effect, otherwhise specify effect properties
 
@@ -140,7 +141,7 @@ Delay | `int` | Time it takes to replay samples (in 10ms steps - default: `25` =
 
 Example:
 ```json
-{ "Command": 7, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Position": { "X": 2.5, "Y": 231.2, "Z": -22.1 }, "Rotation": 0.0, "IsAlive": true, "Echo": { "Duration": 100, "Rolloff": 0.3, "Delay": 25 } } }
+{ "Command": 7, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Position": { "X": 2.5, "Y": 231.2, "Z": -22.1 }, "Rotation": 0.0, "VoiceRange": 22.0, "IsAlive": true, "Echo": { "Duration": 100, "Rolloff": 0.3, "Delay": 25 } } }
 ```
 
 ## 8 – PlayerStateUpdate
@@ -184,7 +185,7 @@ SelfState | `SelfState` | Own player state
 
 Example:
 ```json
-{ "Command": 9, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "PlayerStates": [{ "Name": "2913e966dd7b4d5a", "Position": { "X": -76.2008, "Y": 843.405151, "Z": 235.706909 }, "VoiceRange": 8.0, "IsAlive" : true,"VolumeOverride": null }], "SelfState": { "Position": { "X":1709.001, "Y":3596.44263, "Z":30.1104813 }, "Rotation": 154.050766 } } }
+{ "Command": 9, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "PlayerStates": [{ "Name": "2913e966dd7b4d5a", "Position": { "X": -76.2008, "Y": 843.405151, "Z": 235.706909 }, "VoiceRange": 8.0, "IsAlive" : true,"VolumeOverride": null }], "SelfState": { "Position": { "X":1709.001, "Y":3596.44263, "Z":30.1104813 }, "Rotation": 154.050766, "VoiceRange": 22.0 } } }
 ```
 
 ## 10 – RemovePlayer
