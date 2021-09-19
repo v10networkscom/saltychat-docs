@@ -365,6 +365,54 @@ Example:
 { "Command": 33, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "Name": "s1v8s2e7wes", "IsSending": true, "PrimaryChannel": true, "ActiveRelay": null } }
 ```
 
+## 37 – AddRadioChannelMember
+Adds a player to primary or secondary channel. Player will be used as whisper target when sending radio traffic.
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+PlayerName | `string` | TeamSpeak name of the player
+IsPrimaryChannel | `bool` | `true` if player should be a whisper target when sending on primary channel, `false` when sending on secondary channel
+
+Example:
+```json
+{ "Command": 37, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "PlayerName": "s1v8s2e7wes", "IsPrimaryChannel": true } }
+```
+
+## 38 – UpdateRadioChannelMembers
+Bulk update (overwrite) of players in primary or secondary channel. Players will be used as whisper target when sending radio traffic.
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+PlayerNames | `string[]` | TeamSpeak names of the players
+IsPrimaryChannel | `bool` | `true` if players should be updated on primary channel, `false` when updating secondary channel
+
+Example:
+```json
+{ "Command": 38, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "PlayerNames": [ "s1v8s2e7wes" ], "IsPrimaryChannel": true } }
+```
+
+## 39 – RemoveRadioChannelMember
+Removes a player from primary or secondary channel and wont be used as whisper target anymore.
+
+ServerUniqueIdentifier required: Yes  
+Parameter object:
+
+Property | Type | Description
+------------ | ------------- | -------------
+PlayerName | `string` | TeamSpeak name of the player
+IsPrimaryChannel | `bool` | `true` if player should be removed as whisper target from primary channel, `false` when removing from secondary channel
+
+Example:
+```json
+{ "Command": 39, "ServerUniqueIdentifier": "NMjxHW5psWaLNmFh0+kjnQik7Qc=", "Parameter": { "PlayerName": "s1v8s2e7wes", "IsPrimaryChannel": true } }
+```
+
 ## 40 – MegaphoneCommunicationUpdate
 Used to start, update or end a megaphone effect. 
 

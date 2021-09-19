@@ -56,6 +56,10 @@ enum Command
     RadioTowerUpdate = 32,
     RadioTrafficState = 33,
 
+    AddRadioChannelMember = 37,
+    UpdateRadioChannelMembers = 38,
+    RemoveRadioChannelMember = 39,
+
     // Megaphone
     MegaphoneCommunicationUpdate = 40,
     StopMegaphoneCommunication = 41,
