@@ -105,7 +105,7 @@ Mod | Language | Maintainer | Link | Comment |
 FiveM | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-fivem) | - |
 RedM | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-redm) | - |
 RAGEMP | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-ragemp) | - |
-alt:V | C#/TS | [LorianAtashi01](https://github.com/LorianAtashi01) | [repo](https://github.com/LorianAtashi01/saltychat-altv/) | - |
+alt:V | C#/TS | [LorianAtashi01](https://github.com/LorianAtashi01) | [repo](https://github.com/LorianAtashi01/saltychat-altv) | - |
 
 # Credits
 We are using code from the following open source projects:
