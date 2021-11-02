@@ -76,7 +76,9 @@ enum Error
     AlreadyInGame = 3,
     ChannelNotAvailable = 4,
     NameNotAvailable = 5,
-    InvalidValue = 6
+    InvalidValue = 6,
+    ServerBlacklisted = 100,
+    ServerUnderlicensed = 101
 }
 ```
 
