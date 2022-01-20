@@ -41,7 +41,7 @@ SendTalkStates | `bool` | `false` if `TalkState`s shouldn't be sent for other pl
 SendRadioTrafficStates | `bool` | `true` to receive `RadioTrafficState`, `false` by default
 UltraShortRangeDistance | `float` | Maximum range of USR radio mode, `1800f` by default
 ShortRangeDistance | `float` | Maximum range of SR radio mode, `3000f` by default
-LongRangeDistace | `float` | Maximum range of LR radio mode, `8000f` by default
+LongRangeDistance | `float` | Maximum range of LR radio mode, `8000f` by default
 
 Example:
 ```json
