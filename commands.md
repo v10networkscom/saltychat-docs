@@ -159,7 +159,7 @@ VoiceRange | `float` | Range the player can be heard (proximity voice)
 IsAlive | `bool` | If `false` the player can't be heard (default: `true`)
 VolumeOverride | `float?` | Overrides the volume calculated by proximity voice (0f - 1.6f / 0 - 160%)
 DistanceCulled | `bool` | `true` to remove player from proximity calculation
-Muffle | `MuffleEffect` | `null` to disbale effect, otherwhise specify effect properties
+Muffle | `MuffleEffect` | `null` to disable effect, otherwhise specify effect properties
 
 MuffleEffect object:
 
