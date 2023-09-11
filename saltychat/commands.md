@@ -41,7 +41,7 @@ SendTalkStates | `bool` | `false` if `TalkState`s shouldn't be sent for other pl
 SendRadioTrafficStates | `bool` | `true` to receive `RadioTrafficState`, `false` by default
 UltraShortRangeDistance | `float` | Maximum range of USR radio mode, `1800f` by default
 ShortRangeDistance | `float` | Maximum range of SR radio mode, `3000f` by default
-LongRangeDistace | `float` | Maximum range of LR radio mode, `8000f` by default
+LongRangeDistance | `float` | Maximum range of LR radio mode, `8000f` by default
 
 Example:
 ```json
@@ -92,7 +92,7 @@ Property | Type | Description
 ------------ | ------------- | -------------
 IsConnectedToServer (obsolete) | `bool` | Indicates if TeamSpeak is connected to the server with the UID specified in "Initiate" - will be removed in the future
 IsReady (obsolete) | `bool` | Is `true` if the TeamSpeak client is connected to the specified server and in the correct channel - will be removed in the future
-State | `GameInstanceState` | State of the specified game instance
+State | [GameInstanceState](enums.md#game-instance-state) | State of the specified game instance
 
 Example:
 ```json
@@ -129,7 +129,7 @@ Position | `Vector3` | Player's 3D position
 Rotation | `float` | Rotation of the player (-180 to 180)
 VoiceRange | `float` | Player's voice range
 IsAlive | `bool` | If `false` the player can't hear anyone (default: `true`)
-Echo | `EchoEffect` | `null` to disable effect, otherwhise specify effect properties
+Echo | `EchoEffect` | `null` to disable effect, otherwise specify effect properties
 
 EchoEffect object:
 
@@ -159,7 +159,7 @@ VoiceRange | `float` | Range the player can be heard (proximity voice)
 IsAlive | `bool` | If `false` the player can't be heard (default: `true`)
 VolumeOverride | `float?` | Overrides the volume calculated by proximity voice (0f - 1.6f / 0 - 160%)
 DistanceCulled | `bool` | `true` to remove player from proximity calculation
-Muffle | `MuffleEffect` | `null` to disbale effect, otherwhise specify effect properties
+Muffle | `MuffleEffect` | `null` to disable effect, otherwise specify effect properties
 
 MuffleEffect object:
 
@@ -294,8 +294,8 @@ Parameter object:
 Property | Type | Description
 ------------ | ------------- | -------------
 Name | `string` | TeamSpeak name of the player
-SenderRadioType | `RadioType` | Radio type of the sending player
-OwnRadioType | `RadioType` | The local players radio type
+SenderRadioType | [RadioType](enums.md#radio-type) | Radio type of the sending player
+OwnRadioType | [RadioType](enums.md#radio-type) | The local players radio type
 PlayMicClick | `bool` | If `true` Salty Chat will automatically play the sound "onMicClick" or "offMicClick" of the specified sound pack, if the player is in range
 Volume | `float?` | Overrides the volume in percent (0f - 1.6f / 0 - 160%)
 Direct | `bool` | `true` if the communication is direct, `false` to relay the communication through other players (`RelayedBy`)

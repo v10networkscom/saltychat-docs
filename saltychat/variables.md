@@ -27,8 +27,8 @@ The plugin will automaticly join the channel and rejoin it after moving out of i
 ## IngameChannelPassword
 Password of the TeamSpeak channel.
 
-[setup-server-uid]: /media/setup-server-uid.jpg "TeamSpeak Server UID"
-[setup-channel-id]: /media/setup-channel-id.jpg "TeamSpeak Channel ID"
+[setup-server-uid]: ~/images/setup-server-uid.jpg "TeamSpeak Server UID"
+[setup-channel-id]: ~/images/setup-channel-id.jpg "TeamSpeak Channel ID"
 
 ## SwissChannelIds
 IDs of neutral channels that can be joined, while the game instance is running.  

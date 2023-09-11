@@ -1,17 +1,8 @@
 # Salty Chat FAQ
 
-## Table of Content
-
-- [Where can I download an old version?](#where-can-i-download-an-old-version)
-- [How to enable extensive logging?](#how-to-enable-extensive-logging)
-- [My TeamSpeak crashes](#my-teamspeak-crashes)
-- [Installation of Salty Chat is corrupt](#installation-of-salty-chat-is-corrupt)
-- [*.ts3_plugin is unknown file / opened in wrong program](#ts3_plugin-is-an-unknown-file)
-- [FiveM/RedM/LibertyM (CFX): NUI stuck at "Connecting..."](#cfx-nui-stuck-at-connecting) 
-
 ## Where can I download an old version?
 
-In most cases you don't need an older version, because each version within a major release is compatible with each other (see [versioning scheme](/readme.md#versioning-and-update-branches)).\
+In most cases you don't need an older version, because each version within a major release is compatible with each other (see [versioning scheme](intro.md#versioning-and-update-branches)).\
 If you are experiencing issues with the latest version, you should create a detailed bug report here on [GitHub](https://github.com/v10networkscom/saltychat-docs/issues/new) or our Discord.
 
 We provide older versions in case the latest version is unusable for your case, but we don't provide any guarantee for availability of older versions and will not support them.\
@@ -40,7 +31,7 @@ In case you are experiencing crashes with the latest version, provide us the cra
 
 If you have the following error, follow the solutions below.
 
-![Installation of Salty Chat is corrupt](/media/setup-installation-corrupt.png)
+![Installation of Salty Chat is corrupt](~/images/setup-installation-corrupt.png)
 
 ### Solution A
 

@@ -1,0 +1,42 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "saltychat/**.md",
+          "saltychat/toc.yml",
+          "toc.yml",
+          "index.md"
+        ],
+        "exclude": [ "_site/**", "obj/**" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appTitle": "v10networks Docs",
+      "_appFooter": "<span><a href='https://gaming.v10networks.com/imprint'>Imprint</a> | <a href='https://gaming.v10networks.com/privacy'>Privacy Policy</a></span>",
+      "_appLogoPath": "images/logo.png"
+    },
+    "sitemap": {
+      "baseUrl": "https://gaming.v10networks.com/docs/",
+      "priority": 0.5,
+      "changefreq": "daily"
+    },
+    "postProcessors": ["ExtractSearchIndex"],
+    "keepFileLink": false,
+    "disableGitFeatures": false
+  }
+}
