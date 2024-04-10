@@ -110,6 +110,7 @@ Ensure that users can whisper among themselves while in the ingame channel. In l
 Mod | Language | Maintainer | Link | Comment |
 |     :---:      |     :---:      |     :---:      |     :---:      |     :---:      |
 FiveM | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-fivem) | - |
+FiveM | Lua | [FirstWiseman](https://github.com/FirstWiseman) | [repo](https://github.com/FirstWiseman/saltychat-fivem-lua) | - |
 RedM | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-redm) | - |
 RAGEMP | C# | [v10networks](https://github.com/v10networkscom) | [repo](https://github.com/v10networkscom/saltychat-ragemp) | - |
 alt:V | C#/TS | [Salt-V](https://github.com/Salt-V) | [repo](https://github.com/Salt-V/saltychat-altv) | - |
